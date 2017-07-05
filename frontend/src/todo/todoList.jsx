@@ -12,6 +12,7 @@ const TodoList = props => {
     return list.map(todo => (
       <tr key={ todo._id }>
         <td className={ todo.done ? 'markedAsDone' : '' }>{ todo.description }</td>
+        <td>{ todo.category }</td>
         <td>
           <Button style="success" icon="check" hide={todo.done} onClick={ () => props.markAsDone(todo) }></Button>
           <Button style="warning" icon="undo" hide={!todo.done} onClick={ () => props.markAsPendding(todo) }></Button>
@@ -26,6 +27,7 @@ const TodoList = props => {
       <thead>
         <tr>
           <th>Descrição</th>
+          <th>Categoria</th>
           <th className="tableActions">Ações</th>
         </tr>
       </thead>

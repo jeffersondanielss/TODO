@@ -7,6 +7,11 @@ export const changeDescription = event => ({
   payload: event.target.value
 })
 
+export const changeCategory = event => ({
+  type: 'CATEGORY_CHANGED',
+  payload: event.target.value
+})
+
 export const search = () => {
   return (dispatch, getState) => {
     const description = getState().todo.description
@@ -16,9 +21,9 @@ export const search = () => {
   }
 }
 
-export const add = description => {
+export const add = (description, category) => {
   return dispatch => {
-    axios.post(URL, { description })
+    axios.post(URL, { description, category })
       .then( resp => dispatch({ type: 'TODO_ADDED', payload: resp.data }) )
       .then( resp => dispatch(clear()) )
       .then( resp => dispatch(search()) )
