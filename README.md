@@ -1,9 +1,9 @@
 # TODO APP
 > [curso-react-redux]
 
-<span align="center">
+<p align="center">
 ![preview](preview.png)
-</span>
+</p>
 
 ## Backend
 
