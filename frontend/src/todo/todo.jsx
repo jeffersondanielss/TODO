@@ -6,7 +6,7 @@ import TodoList from './todoList'
 
 export default props => (
   <div>
-    <PageHeader name="tarefas" small="Cadastro"></PageHeader>
+    <PageHeader name="Tarefas" small="cadastro"></PageHeader>
     <TodoForm />
     <TodoList />
   </div>
