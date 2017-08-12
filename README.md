@@ -2,7 +2,7 @@
 > [curso-react-redux]
 
 <p align="center">
-![preview](preview.png)
+  <img src="https://github.com/jeffersondanielss/TODO/blob/master/preview.png?raw=true" alt="preview" />
 </p>
 
 ## Backend
@@ -41,4 +41,5 @@ Executando o frontend
 ```
 
 URL da API `http://localhost:3003/api/todos`
+
 Aplicação: `http://localhost:8080`
