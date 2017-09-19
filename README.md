@@ -6,45 +6,17 @@
   <img src="https://github.com/jeffersondanielss/TODO/blob/master/preview.png?raw=true" alt="preview" style="box-shadow: 0 2px 38px #ccc"/>
 </p>
 
-## Backend
+## Rodando o projeto
+> Você vai precisar ter o Docker instalado na máquina.
 
-Inicie o mongoDB
+Entre na pasta do projeto e execute o comando
+
 ```bash
-  $ mongod
-```
-
-Entre na pasta `backend` do projeto e instale as dependencias
-```bash
-  $ yarn
-  // ou
-  $ npm i
-```
-
-Executando o backend
-```bash
-  $ yarn run dev
-  // ou
-  $ npm run dev
-```
-
-## Frontend
-
-Entre na pasta `frontend` do projeto e instale as dependencias
-```bash
-  $ yarn
-  // ou
-  $ npm i
-```
-
-Executando o frontend
-```bash
-  $ yarn run dev
-  // ou
-  $ npm run dev
+  $ docker-compose up
 ```
 
 # Aplicação
 
-URL da API `http://localhost:3003/api/todos`
+URL da API:  `http://localhost:8008/api/todos`
 
 Aplicação: `http://localhost:8080`

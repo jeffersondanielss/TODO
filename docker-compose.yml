@@ -1,0 +1,20 @@
+version: "3"
+services:
+  db:
+    image: mongo:3.4
+
+  backend:
+    image: node:8.1
+    volumes:
+      - ./backend:/backend
+    ports:
+      - 8008:3003
+    command: bash -c "cd /backend && yarn && yarn dev"
+
+  frontend:
+    image: node:8.1
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - 8080:8080
+    command: bash -c "cd /frontend && yarn && yarn dev"
